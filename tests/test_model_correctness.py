@@ -1,6 +1,5 @@
 import joblib
 import pandas as pd
-
 # Define path to our model
 MODEL_DIR = "models"
 
