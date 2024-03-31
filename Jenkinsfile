@@ -1,6 +1,5 @@
 pipeline {
     agent any
-    
     options{
         // Max number of build logs to keep and days to keep
         buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '5'))
