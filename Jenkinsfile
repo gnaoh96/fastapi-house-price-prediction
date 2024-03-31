@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     options{
         // Max number of build logs to keep and days to keep
         buildDiscarder(logRotator(numToKeepStr: '5', daysToKeepStr: '5'))
@@ -8,7 +9,7 @@ pipeline {
     }
 
     environment{
-        registry = 'quandvrobusto/house-price-prediction-api'
+        registry = 'gnaoh96/house-price-prediction'
         registryCredential = 'dockerhub'      
     }
 
